@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Region - WIS Community</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo">WIS Community</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="LinkYT.html">Link YT</a>
+      <a href="region.html" class="active">Region</a>
+    </nav>
+  </header>
+
+  <section class="region-container fade-in">
+    <h2>Pilih Region 🌍</h2>
+    
+
+    <div class="region-grid">
+      <div class="region-card zoom-in" onclick="setRegion('indonesia')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" alt="Indonesia">
+        <h3>Indonesia</h3>
+      </div>
+
+      <div class="region-card zoom-in" onclick="setRegion('malaysia')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg" alt="Malaysia">
+        <h3>Malaysia</h3>
+      </div>
+    </section>
+   
+
+  <footer>
+    <p> © 2025 WIS Community</p>
+  </footer>
+
+  <script>
+    function setRegion(region) {
+      localStorage.setItem('selectedRegion', region);
+      window.location.href = 'LinkYT.html';
+    }
+  </script>
+</body>
+</html>
